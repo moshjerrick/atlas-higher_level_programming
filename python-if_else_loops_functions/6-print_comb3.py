@@ -6,4 +6,4 @@ for i in range(10):
 
 
 
-            print(combination, end="")
+            print("{}".format (combination), end="")
