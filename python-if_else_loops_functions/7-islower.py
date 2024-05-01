@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def islower(c):
-    if c == range(97, 122):
-        print("True")
+    if c.islower():
+        print("{}".format, "True", end="")
     else:
         print("False")
