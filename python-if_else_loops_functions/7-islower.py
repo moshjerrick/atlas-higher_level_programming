@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def islower(c):
     if c.islower():
-        print("{}".format, "True", end="")
+        print("True", end="")
     else:
-        print("False")
+        print("False", end="")
