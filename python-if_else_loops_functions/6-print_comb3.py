@@ -3,7 +3,4 @@ for i in range(10):
     for j in range(i + 1,10):
         if i != j:
             combination = f"{i}{j}, "
-
-
-
-            print(f"{combination}", end="")
+            print("{}".format(combination), end="")
