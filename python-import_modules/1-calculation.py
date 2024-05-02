@@ -20,3 +20,8 @@ def divide(a, b):
 if __name__ == "__main__":
     a = 10
     b = 5
+
+    add(a,b)
+    subtract(a,b)
+    multiply(a, b)
+    divide(a, b)
