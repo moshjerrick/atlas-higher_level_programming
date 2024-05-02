@@ -2,7 +2,7 @@
 from calculator_1 import calculator
 
 def add(a, b):
-    result = calculator(a, b, '+')
+    result = calculator(a, b)
     print("{} + {} = {}".format(a, b, result))
 
 def subtract(a, b):
