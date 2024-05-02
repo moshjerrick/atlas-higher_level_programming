@@ -2,16 +2,20 @@
 from calculator_1 import calculator
 
 def add(a, b):
-    print("{} + {} = {}".format(a, b, add(a, b)))
+    result = calculator(a, b, '+')
+    print("{} + {} = {}".format(a, b, result))
 
 def subtract(a, b):
-    print("{} - {} = {}".format(a, b, subtract(a, b)))
+    result = calculator(a, b, '-')
+    print("{} - {} = {}".format(a, b, result))
 
 def multiply(a, b):
-    print("{} * {} = {}".format(a, b, multiply(a,b)))
+    result = calculator(a, b, '*')
+    print("{} * {} = {}".format(a, b, result))
 
 def divide(a, b):
-    print("{} / {} = {}".format(a, b, divide(a, b)))
+    result = calculator(a, b, '/')
+    print("{} / {} = {}".format(a, b, result))
 
 if __name__ == "__main__":
     a = 10
