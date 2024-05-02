@@ -7,4 +7,4 @@ if __name__ == "__main__":
     for i, arg in enumerate(sys.argv[1:], start = 1):
         print("{}: {}".format(i, arg))
         if arg_number == 0:
-            print("{}".format(0 arguments.))
+            print("{}".format("0 arguments."))
