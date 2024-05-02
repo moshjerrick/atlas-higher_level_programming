@@ -14,4 +14,4 @@ def multiply(a, b):
 def divide(a, b):
     print("{} / {} = {}".format(a, b, divide(a, b)))
 
-    if __name__ == "__main__":
+if __name__ == "__main__":
