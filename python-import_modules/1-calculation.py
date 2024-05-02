@@ -5,9 +5,12 @@ if __name__ == "__main__":
     b = 5
     def add(a, b):
         print("{} + {} = {}".format(a, b, add(a, b)))
+
     def subtract(a, b):
         print("{} - {} = {}".format(a, b, subtract(a, b)))
+
     def multiply(a, b):
         print("{} * {} = {}".format(a, b, multiply(a,b)))
+
     def divide(a, b):
         print("{} / {} = {}".format(a, b, divide(a, b)))
