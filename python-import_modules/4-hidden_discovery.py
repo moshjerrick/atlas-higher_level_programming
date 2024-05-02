@@ -4,5 +4,5 @@ if __name__ == "__main__":
     names = dir(hidden_4)
     for name in names:
         obj = getattr(hidden_4, name)
-        print("{}: {}".formart(name, obj))
+        print("{}: {}".format(name, obj))
 
