@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 def element_at(my_list, idx):
-    if idx < 0:
+    if idx < 0 or idx >= len(my_list):
         return None
-    if idx > my_list:
-        return None
-    for num in my_list:
-        print("{:d}".format(num))
+    print("{:d}".format(my_list[idx]))
