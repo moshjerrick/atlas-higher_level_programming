@@ -4,4 +4,4 @@ def square_matrix_simple(matrix=[]):
 
     print("{}".format(new_matrix))
     for row in new_matrix:
-    print("{}".format(row))
+        print("{}".format(row))
