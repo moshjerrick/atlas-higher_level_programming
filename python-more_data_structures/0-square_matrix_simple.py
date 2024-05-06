@@ -3,5 +3,5 @@ def square_matrix_simple(matrix=[]):
     new_matrix = list(map(lambda row: list(map(lambda x: x ** 2, row)), matrix))
 
     print("{}".format(new_matrix))
-    for row in squared_matrix:
+    for row in new_matrix:
     print("{}".format(row))
