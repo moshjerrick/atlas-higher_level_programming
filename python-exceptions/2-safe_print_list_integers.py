@@ -5,5 +5,5 @@ def safe_print_list_integers(my_list=[], x=0):
         try:
             print("{}".format(i))
         except IndexError:
-            print()
+            #print()
     return result
