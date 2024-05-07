@@ -7,4 +7,4 @@ def safe_print_division(a, b):
         print("{}".format("Divide by zero!!!!"))
     else: print("{}".format(result))
     finally:
-        print({} + {}.format("Inside result:", result))
+        print({} {}.format("Inside result:", result))
