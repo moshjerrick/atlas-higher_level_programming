@@ -3,7 +3,10 @@ def safe_print_integer(value):
     if value == 0:
         return False
     try:
+        value_str = str(value)
+        if value_str.startswith('{') and value_str.endswith('}'):
+            value_str = value_str[1:-1]
         print("{:d}".format(value))
         return True
-    except ValueError:
+    except (ValueError, TypeError):
         return False
