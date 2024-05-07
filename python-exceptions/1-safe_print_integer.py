@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def safe_print_integer(value):
     if value == 0:
-        return False
+        return True
     try:
         value_str = str(value)
         if value_str.startswith('{') and value_str.endswith('}'):
