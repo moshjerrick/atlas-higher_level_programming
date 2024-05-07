@@ -4,6 +4,6 @@ def safe_print_list_integers(my_list=[], x=0):
     for item in result:
         try:
             print("{:d}".format(item), end="")
-        except:
+        except ValueError:
             print()
     return result
