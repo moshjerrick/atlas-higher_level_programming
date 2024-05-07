@@ -9,4 +9,8 @@ def list_division(my_list_1, my_list_2, list_length):
             result.append(0)
         except IndexError:
             print("{}".format("out of range"))
-    
+        except TypeError:
+            print("{}".format('wrong type'))
+        finally:
+            pass
+    return result
