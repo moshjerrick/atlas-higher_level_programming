@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def safe_print_integer(value):
     if value == 0:
+        print("{}".format(0))
         return True
     try:
         value_str = str(value)
