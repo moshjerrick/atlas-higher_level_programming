@@ -1,4 +1,3 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    max(stats, key=stats.get)
-    
+    keymax = max(zip(a_dictionary.values(), a_dictionary.keys()))[1]
