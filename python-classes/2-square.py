@@ -9,7 +9,7 @@ class Square:
         """Initialize the Square with size"""
 
         if type(size) != int:
-            raise TypeError("Size must be an integer.")
+            raise TypeError("size must be an integer")
         """size must be an integer"""
         if size < 0:
             raise ValueError("Size must be non-negative.")
