@@ -46,7 +46,7 @@ class Square:
     def position(self, value):
 
         if len(value) != 2 or type(value) != tuple:
-            raise TypeError
+            raise ValueError
         if type(value[0]) != int or value[0] < 0:
             raise TypeError
         if type(value[1]) != int or value[1] < 0:
