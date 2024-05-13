@@ -16,5 +16,5 @@ class Square:
         """size must be above 0"""
 
     def area(self):
-        return self.size * self.__size
+        return self.size ** 2
     
