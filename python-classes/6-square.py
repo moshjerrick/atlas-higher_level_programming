@@ -35,8 +35,8 @@ class Square:
         if self.__size == 0:
             print()
         else:
-            for i in range(self.size):
-                print("#" * self.size)
+            for i in range(self.__size):
+                print("#" * self.__size)
     @property
     def position(self):
         #get position
