@@ -31,7 +31,7 @@ class Square:
         return self.__size ** 2
 
     def my_print(self):
-            # method to print a # according to the size value
+        # method to print a # according to the size value
         if not self.__size:
             print()
         else:
