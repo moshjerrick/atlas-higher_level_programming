@@ -29,3 +29,13 @@ class Square:
 
     def area(self):
         return self.__size ** 2
+
+        def my_print(self):
+            # method to print a # according to the size value
+            if not self.__size:
+                print()
+            else:
+                for i in range(self.size):
+                    for j in range(self.size):
+                        print("#", end="")
+                print()
