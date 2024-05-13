@@ -6,26 +6,28 @@ class Rectangle:
     """This be Rectangle"""
     def __init__(self, height="0", width="0"):
         self.height = height
-        self.width = height
+        self.width = width
 
     @property
     def height(self):
         return self.__height
+
     @height.setter
     def height(self, value):
-        if value.isdigit():
-            self.__height = value
+        if type(value) is not int:
+            raise TypeError("height must be an integer")
         else:
-            print("height must be an integer")
+            self.__height = value
 
     @property
     def width(self):
         return self.__width
+
     @width.setter
     def width(self, value):
-        if value.isdigit():
-            self.__width = value
+        if type(value) is not int:
+            raise TypeError("width must be an integer")
         else:
-            print("width must be an integer")
+            self.__width = value
 
 
