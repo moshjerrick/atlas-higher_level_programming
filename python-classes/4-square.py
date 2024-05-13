@@ -14,7 +14,7 @@ class Square:
     def size(self):
         # getter setter return current size of square
         return (self.__size)
-    
+
     @size.setter
     def size(self, value):
         # method to set size value
@@ -29,5 +29,3 @@ class Square:
 
     def area(self):
         return self.__size ** 2
-    
-
