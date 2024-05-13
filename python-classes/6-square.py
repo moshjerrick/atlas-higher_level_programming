@@ -47,7 +47,7 @@ class Square:
 
         if len(value) != 2 or type(value) != tuple:
             raise ValueError
-        if type(value[0]) != int or value[0] < 0 or type(value[1]) != int or value[1 <0]:
+        if type(value[0]) != int or value[0] < 0 or type(value[1]) != int or value[1] <0:
             raise ValueError
         self.__position = value
 
