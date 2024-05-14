@@ -5,7 +5,7 @@ Module Devide Matrix """
 
 def matrix_divided(matrix, div):
     """
-    Devides elements in a matrix
+    Divides elements in a matrix
 
     Args:
 
@@ -30,6 +30,6 @@ def matrix_divided(matrix, div):
     for row in matrix:
         divided_row = []
         for element in row:
-            divided_row.append(element / div, 2)
+            divided_row.append(round(element / div, 2))
         result_matrix.append(divided_row)
     return result_matrix
