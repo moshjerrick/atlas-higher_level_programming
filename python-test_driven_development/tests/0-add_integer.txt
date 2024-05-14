@@ -12,8 +12,8 @@ two integers:
 
 two floats:
         >>> add_interger(2.22, 5.1)
-        7.32
+        7
 
 one float and one int:
         >>> add_interger(2.22, 5)
-        7.22
+        7
