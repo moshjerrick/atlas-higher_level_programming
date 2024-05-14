@@ -34,8 +34,3 @@ class Rectangle:
         else:
             self.__width = value
 
-
-    @property
-    def height(self):
-        return self.__height
-
