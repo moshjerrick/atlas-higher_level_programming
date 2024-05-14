@@ -61,7 +61,7 @@ class Rectangle:
             return rectangle
         for i in range(self.height):
             rectangle += ("#" * self.width) + "\n"
-            return rectangle
+            return rectangle[:-1]
 
 
         
