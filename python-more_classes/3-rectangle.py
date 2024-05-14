@@ -55,7 +55,6 @@ class Rectangle:
     
     def __str__(self):
         """ Method to return str of a rectangle"""
-        rectangle = ""
 
         if self.width == 0 or self.height == 0:
             return ""
