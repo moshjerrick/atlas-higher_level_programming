@@ -7,19 +7,19 @@ import module:
         >>> add_integer = __import__("0-add_integer").add_integer
 
 two integers:
-	    >>> add_integer(2, 5)
-	    7
+	>>> add_integer(2, 5)
+	7
 
 two floats:
-        >>> add_integer(2.22, 5.1)
-        7
+    >>> add_integer(2.22, 5.1)
+    7
 
 one float and one int:
-        >>> add_integer(2.22, 5)
-        7
+    >>> add_integer(2.22, 5)
+    7
 CHECKING FOR NON INTEGERS
 
 one int and one str:
-        >>> add_integer(2, "balloon")
-        Traceback (most recent call last):
-        TypeError: b must be an integer
+    >>> add_integer(2, "balloon")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
