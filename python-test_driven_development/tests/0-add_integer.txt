@@ -18,21 +18,15 @@ one float and one int:
     >>> add_integer(2.22, 5)
     7
 
-CHECKING FOR NON INTEGERS
-
 one int and one str:
     >>> add_integer(2, "balloon")
     Traceback (most recent call last):
     TypeError: b must be an integer
 
-CHECKING FOR OVERFLOWERRORS
-
 one int and non int
     >>> add_integer(5, 1e400)
     Traceback (most recent call last):
     OverflowError: cannot convert float infinity to integer
-
-CHECKING FOR NAN
 
 one int and one nan:
     >>> add_integer(1, float('nan'))
