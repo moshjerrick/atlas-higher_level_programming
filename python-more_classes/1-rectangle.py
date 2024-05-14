@@ -34,5 +34,6 @@ class Rectangle:
         else:
             self.__width = value
 
-    def area(self):
-        return self.__width * self.__height
+        def __str__(self):
+            return f"Height: {self.height}, Width: {self.width}"
+
