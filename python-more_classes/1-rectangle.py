@@ -34,3 +34,5 @@ class Rectangle:
         else:
             self.__width = value
 
+    def area(self):
+        return self.__width * self.__height
