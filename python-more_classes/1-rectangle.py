@@ -5,27 +5,17 @@
 class Rectangle:
     """This be Rectangle"""
     def __init__(self, height="0", width="0"):
+        #  Initialize private attributes
         self.height = height
         self.width = width
 
     @property
-    def height(self):
-        return self.__height
-
-    @height.setter
-    def height(self, value):
-        if not isinstance(value, int):
-            raise TypeError("height must be an integer")
-        elif value < 0:
-            raise ValueError("height must be >= 0")
-        else:
-            self.__height = value
-
-    @property
     def width(self):
+        # width getter
         return self.__width
 
     @width.setter
+    # width setter
     def width(self, value):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -34,6 +24,19 @@ class Rectangle:
         else:
             self.__width = value
 
-        def __str__(self):
-            return f"Height: {self.height}, Width: {self.width}"
+
+    @property
+    def height(self):
+        # height getter
+        return self.__height
+
+    @height.setter
+    # height setter
+    def height(self, value):
+        if not isinstance(value, int):
+            raise TypeError("height must be an integer")
+        elif value < 0:
+            raise ValueError("height must be >= 0")
+        else:
+            self.__height = value
 
