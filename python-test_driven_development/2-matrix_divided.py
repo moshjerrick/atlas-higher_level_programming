@@ -30,6 +30,6 @@ def matrix_divided(matrix, div):
     for row in matrix:
         divided_row = []
         for element in row:
-            divided_row.append(element / divisor)
+            divided_row.append(element / div)
         result_matrix.append(divided_row)
     return result_matrix
