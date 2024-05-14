@@ -1,29 +1,13 @@
 #!/usr/bin/python3
-"""
-
-Add Integer or Float Module
-
-"""
-
-
+# Adding ints and floats after casing them to ints"""
 def add_integer(a, b=98):
-    """
-    ADD Two integer a and b
+    #Add two numbers after converting them to integers.
 
-    Args:
-        a (int/float): first int
-        b (int/float): Second int
-
-    Raises:
-        TypeError: in case the arguments are not int or float
-
-    Return:
-        (int) : Sum of the int a and b
-    """
-    if type(a) not in [int, float]:
-        raise TypeError('a must be an integer')
-    if type(b) not in [int, float]:
-        raise TypeError('b must be an integer')
-    if (a + b) == float('inf') or (a + b) == -float('inf'):
-        return b
+    #Args:
+        #a (int, float): The first number to be added.
+        #b (int, float): The second number to be added. Default is 98.
+    if type(a is not type(int, float)):
+        raise TypeError("a must be an integer")
+    if type(b is not type(int, float)):
+        raise TypeError("b must be an integer")
     return int(a) + int(b)
