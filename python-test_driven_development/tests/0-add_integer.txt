@@ -19,7 +19,7 @@ one float and one int:
         7
 CHECKING FOR NON INTEGERS
 
-one int and one str
+one int and one str:
         >>> add_integer(2, "balloon")
         Traceback (most recent call last):
         TypeError: b must be an integer
