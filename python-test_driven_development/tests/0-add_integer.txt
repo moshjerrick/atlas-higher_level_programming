@@ -29,5 +29,5 @@ CHECKING FOR OVERFLOWERRORS
 
 one int and non int
     >>> add_integer(5, 1e400)
-     Traceback (most recent call last):
-     OverflowError: cannot convert float infinity to integer
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
