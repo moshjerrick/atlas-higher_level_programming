@@ -3,4 +3,4 @@ Testing import
 
 
     >>> say_my_name('Bob, 'Wehadababyitsaboy')
-        my name is Bob Wehadababyitsaboy
+        My name is Bob Wehadababyitsaboy
