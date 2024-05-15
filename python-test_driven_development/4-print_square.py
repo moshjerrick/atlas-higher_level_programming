@@ -6,7 +6,16 @@ class Square:
     """This be Square"""
 
     def __init__(self, size=0):
-        """Initialize the Square with size"""
+        """
+            Printing a square with #
+        Args
+            size of square
+        raise
+            type errors
+            value errors
+        Return:
+            printed square
+            """
 
         self.size = size
 
