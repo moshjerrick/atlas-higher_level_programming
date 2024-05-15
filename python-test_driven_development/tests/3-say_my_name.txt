@@ -2,5 +2,5 @@ Testing import
     >>> say_my_name = __import__('3-say_my_name').say_my_name
 
 
-    >>> say_my_name('Bob, Wehadababyitsaboy)
+    >>> say_my_name('Bob, 'Wehadababyitsaboy')
         my name is Bob Wehadababyitsaboy
