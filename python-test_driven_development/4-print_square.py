@@ -5,7 +5,7 @@
 class Square:
     """This be Square"""
 
-    def __init__(self, size=0):
+    def print_square(size):
         """
             Printing a square with #
         Args
