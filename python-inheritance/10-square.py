@@ -4,6 +4,7 @@ This module contains a class square
 that inherits from (9-base_geometry.py).
 """
 
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 class Square(Rectangle):
