@@ -1,0 +1,4 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+>>> bg.integer_validator("my_int", 23) #int
+>>> bg.integer_validator("width", 12)
