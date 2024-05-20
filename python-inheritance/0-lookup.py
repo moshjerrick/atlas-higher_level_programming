@@ -3,6 +3,8 @@
     Defining object attribute lookup function
     """
 def lookup(obj):
+
+
     """
     List of objects attributes
 """
