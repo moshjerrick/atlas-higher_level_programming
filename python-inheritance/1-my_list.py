@@ -4,7 +4,7 @@ class mylist inherits from list
 """
 class MyList(list):
     """
-    type class MyList
+    Class that extends `list`
     """
     def print_sorted(self):
         """
