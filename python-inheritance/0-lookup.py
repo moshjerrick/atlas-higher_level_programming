@@ -4,7 +4,6 @@
     """
 def lookup(obj):
 
-
     """
     List of objects attributes
 """
