@@ -9,7 +9,7 @@ BaseGeometry = __import__('9-base_geometry').BaseGeometry
 
 class Square(BaseGeometry):
     """ Square Class """
-def __init__(self, size):
+    def __init__(self, size):
         """ Init a Square """
         self.interger_validator("size". size)
         self.__size = size
