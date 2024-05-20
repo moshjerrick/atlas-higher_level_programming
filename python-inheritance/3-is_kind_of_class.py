@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-
+Check for same class or if inherited from
 """
 
 
