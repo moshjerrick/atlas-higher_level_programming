@@ -3,7 +3,7 @@
     Defining object attribute lookup function
     """
 def lookup(obj):
+    """
+    List of objects attributes
 """
-List of objects attributes
-"""
-return (dir(obj))
+    return (dir(obj))
