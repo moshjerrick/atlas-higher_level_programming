@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""This module contains a class square
-    that inherits from (9-base_geometry.py).
+"""
+This module contains a class square
+that inherits from (9-base_geometry.py).
 """
 BaseGeometry = __import__('9-base_geometry').BaseGeometry
 
