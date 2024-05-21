@@ -13,3 +13,8 @@ class Student:
     def to_json(self, attrs=None):
         if attrs is None:
             return self.__dict__
+        dictionary = {}
+        for i in attrs:
+            if hasattr(self, i):
+                dictionary[i] = getattr(self, i)
+        return dictionary
