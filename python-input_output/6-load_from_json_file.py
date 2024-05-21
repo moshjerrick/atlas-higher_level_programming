@@ -7,4 +7,6 @@ import json
 
 def load_from_json_file(filename):
     """ Creates an onject from a json file"""
-    return json.loads(filename)
+    with open(filename, 'r') as f:
+        json_str = f.read()
+        return json.loads(json_str)
