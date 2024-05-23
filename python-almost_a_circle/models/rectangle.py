@@ -10,6 +10,9 @@ class Rectangle(Base):
     Rectangle Class inheriting from Base
     """
     def __init__ (self, width, height, x=0, y=0, id=None):
+        """
+        Init class with seom attr
+        """
         super().__init__(id)
         
         self.width = width
