@@ -20,6 +20,28 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    @property
+    def width(self):
+        """ width getter """
+        return self.__width
+
+    @property
+    def height(self):
+        """ height getter """
+        return self.__height
+
+    @property
+    def x(self):
+        """ x getter """
+        return self.__x
+
+    @property
+    def y(self):
+        """ y getter """
+        return self.__y
+
+
+
 if __name__ == "__main__":
 
     r1 = Rectangle(10, 2)
