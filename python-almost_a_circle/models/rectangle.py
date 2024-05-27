@@ -92,4 +92,3 @@ class Rectangle(Base):
                                                         self.y,
                                                         self.width,
                                                         self.height))
-
