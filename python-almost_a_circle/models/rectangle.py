@@ -4,7 +4,7 @@ Class rectangle that inherits from Base
 """
 
 
-from .base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -82,8 +82,9 @@ class Rectangle(Base):
         """
         Print size of rectangle using #
         """
+        print("\n" * self.y, end="")
         for i in range(self.height):
-            print("#" * self.width)
+            print(" " * self.x + "#" * self.width)
 
     def __str__(self):
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
@@ -91,3 +92,13 @@ class Rectangle(Base):
                                                         self.y,
                                                         self.width,
                                                         self.height))
+
+if __name__ == "__main__":
+
+    r1 = Rectangle(2, 3, 2, 2)
+    r1.display()
+
+    print("---")
+
+    r2 = Rectangle(3, 2, 1, 0)
+    r2.display()
