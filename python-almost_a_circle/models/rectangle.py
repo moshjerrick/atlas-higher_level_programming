@@ -9,6 +9,8 @@ class Rectangle(Base):
     """
     Rectangle Class inheriting from Base
     """
+
+
     def __init__(self, width, height, x=0, y=0, id=None):
         """
         Initialize the Rectangle instance with given attributes.
@@ -95,9 +97,9 @@ class Rectangle(Base):
         """
         Print the rectangle using the `#` character.
         """
-        print("\n" * self.y, end="")  # Print the y offset as empty lines
+        print("\n" * self.y, end="")
         for i in range(self.height):
-            print(" " * self.x + "#" * self.width)  # Print the x offset as spaces
+            print(" " * self.x + "#" * self.width)
 
     def __str__(self):
         """
