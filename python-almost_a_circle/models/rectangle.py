@@ -9,7 +9,6 @@ from .base import Base
 
 class Rectangle(Base):
 
-
     """
     Rectangle Class inheriting from Base
     """
