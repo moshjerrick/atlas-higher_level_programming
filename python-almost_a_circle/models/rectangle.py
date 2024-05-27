@@ -3,9 +3,7 @@
 Class rectangle that inherits from Base
 """
 
-
 from .base import Base
-
 
 class Rectangle(Base):
     """
@@ -13,10 +11,16 @@ class Rectangle(Base):
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        Init class with seom attr
+        Initialize the Rectangle instance with given attributes.
+
+        Args:
+            width (int): The width of the rectangle.
+            height (int): The height of the rectangle.
+            x (int): The x-coordinate of the rectangle.
+            y (int): The y-coordinate of the rectangle.
+            id (int, optional): The identifier of the rectangle.
         """
         super().__init__(id)
-
         self.width = width
         self.height = height
         self.x = x
@@ -24,11 +28,12 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """ width getter """
+        """Get the width of the rectangle."""
         return self.__width
 
     @width.setter
     def width(self, value):
+        """Set the width of the rectangle."""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -37,11 +42,12 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """ height getter """
+        """Get the height of the rectangle."""
         return self.__height
 
     @height.setter
     def height(self, value):
+        """Set the height of the rectangle."""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value <= 0:
@@ -50,11 +56,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """ x getter """
+        """Get the x-coordinate of the rectangle."""
         return self.__x
 
     @x.setter
     def x(self, value):
+        """Set the x-coordinate of the rectangle."""
         if type(value) is not int:
             raise TypeError("x must be an integer")
         if value < 0:
@@ -63,11 +70,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """ y getter """
+        """Get the y-coordinate of the rectangle."""
         return self.__y
 
     @y.setter
     def y(self, value):
+        """Set the y-coordinate of the rectangle."""
         if type(value) is not int:
             raise TypeError("y must be an integer")
         if value < 0:
@@ -75,28 +83,43 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        """ Returning area of the rectangle"""
-        return (self.width * self.height)
+        """
+        Calculate the area of the rectangle.
+
+        Returns:
+            int: The area of the rectangle.
+        """
+        return self.width * self.height
 
     def display(self):
         """
-        Print size of rectangle using #
+        Print the rectangle using the `#` character.
         """
-        print("\n" * self.y, end="")
+        print("\n" * self.y, end="")  # Print the y offset as empty lines
         for i in range(self.height):
-            print(" " * self.x + "#" * self.width)
+            print(" " * self.x + "#" * self.width)  # Print the x offset as spaces
 
     def __str__(self):
-        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
-                                                        self.x,
-                                                        self.y,
-                                                        self.width,
-                                                        self.height))
+        """
+        Return a string representation of the rectangle.
+
+        Returns:
+            str: The string representation of the rectangle.
+        """
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                                                       self.x,
+                                                       self.y,
+                                                       self.width,
+                                                       self.height)
 
     def update(self, *args):
-        if args:
-            attributes = ["id", "width", "height", "x", "y"]
+        """
+        Update the attributes of the rectangle.
+
+        Args:
+            *args: New attribute values in the order id, width, height, x, y.
+        """
+        attributes = ["id", "width", "height", "x", "y"]
         for i, attr in enumerate(attributes):
             if i < len(args):
                 setattr(self, attr, args[i])
-
