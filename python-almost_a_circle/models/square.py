@@ -1,41 +1,33 @@
 #!/usr/bin/python3
 """
-Class Square that inherits from Rectangle
+Module for the Square class, which inherits from the Rectangle class.
 """
 
 from rectangle import Rectangle
 
 class Square(Rectangle):
+    """
+    Square class inheriting from Rectangle.
+    Represents a square with a size, x and y positions, and an optional id.
+    """
 
     def __init__(self, size, x=0, y=0, id=None):
         """
-        Square class constructor
+        Initialize a new Square instance.
+
+        Args:
+            size (int): The size of the square.
+            x (int): The x-coordinate of the square.
+            y (int): The y-coordinate of the square.
+            id (int, optional): The id of the square. Defaults to None.
         """
         super().__init__(size, size, x, y, id)
+
     def __str__(self):
         """
-        STR time
+        Return the string representation of the Square instance.
+
+        Returns:
+            str: The string representation of the square.
         """
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
-
-
-if __name__ == "__main__":
-
-    s1 = Square(5)
-    print(s1)
-    print(s1.area())
-    s1.display()
-
-    print("---")
-
-    s2 = Square(2, 2)
-    print(s2)
-    print(s2.area())
-    s2.display()
-
-    print("---")
-
-    s3 = Square(3, 1, 3)
-    print(s3)
-    print(s3.area())
-    s3.display()
