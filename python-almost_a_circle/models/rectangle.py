@@ -132,9 +132,8 @@ class Rectangle(Base):
                 if key in ["id", "width", "height", "x", "y"]:
                     setattr(self, key, value)
 
-    def to_dictionary(self):
-        """
-        Returns the Squares's dict
-        """
-        s_dict = {"id": self.id, "x": self.x, "size": self.size, "y": self.y}
-        return s_dict
+def to_dictionary(self):
+        """ Returns the rectangle's dict """
+        rec_dict = {'x': self.__x, 'y': self.__y, 'id': self.id,
+                  'height': self.__height, 'width': self.__width}
+        return rec_dict
