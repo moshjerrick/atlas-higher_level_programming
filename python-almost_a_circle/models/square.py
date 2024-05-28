@@ -77,6 +77,7 @@ class Square(Rectangle):
                     self.y = value
                 else:
                     break
+
     def to_dictionary(self):
         """
         Returns the Squares's dict
