@@ -52,13 +52,13 @@ class Square(Rectangle):
         if args:
             for i, arg in enumerate(args):
                 if i == 0:
-                    self.id == arg
+                    self.id = arg
                 if i == 1:
-                    self.size == arg
+                    self.size = arg
                 if i == 2:
-                    self.x == arg
+                    self.x = arg
                 if i == 3:
-                    self.y == arg
+                    self.y = arg
                 else:
                     break
         elif len(kwargs) > 0:
