@@ -4,7 +4,7 @@ Class rectangle that inherits from Base
 """
 
 
-from .base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -127,20 +127,10 @@ class Rectangle(Base):
             for i, attr in enumerate(attributes):
                 if i < len(args):
                     setattr(self, attr, args[i])
-        elif len(kwargs) < 0:
+        elif kwargs:
             for key, value in kwargs.items():
-                if key == "id":
-                    self.id = value
-                elif key == "width":
-                    self.width == value
-                elif key == "height":
-                    self.height = value
-                elif key == "x":
-                    self.x = value
-                elif key == "y":
-                    self.x = value
-                else:
-                    break
+                if key in ["id", "width", "height", "x", "y"]:
+                    setattr(self, key, value)
 
 if __name__ == "__main__":
 
