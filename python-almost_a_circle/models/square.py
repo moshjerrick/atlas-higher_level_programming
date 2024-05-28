@@ -12,4 +12,9 @@ class Square(Rectangle):
         """
         Square class constructor
         """
-       super().__init__(size, size, x, y, id)
+        super().__init__(size, size, x, y, id)
+    def __str__(self):
+        """
+        STR time
+        """
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
