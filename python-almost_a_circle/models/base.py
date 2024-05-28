@@ -27,6 +27,4 @@ class Base:
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
             temp_json = json.dumps(list_dictionaries)
-            rturn temp_json
-
-
+            return temp_json
