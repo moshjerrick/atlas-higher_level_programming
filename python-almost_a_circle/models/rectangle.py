@@ -4,7 +4,7 @@ Class rectangle that inherits from Base
 """
 
 
-from .base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -115,14 +115,46 @@ class Rectangle(Base):
                                                        self.width,
                                                        self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         Update the attributes of the rectangle.
 
         Args:
             *args: New attribute values in the order id, width, height, x, y.
         """
-        attributes = ["id", "width", "height", "x", "y"]
-        for i, attr in enumerate(attributes):
-            if i < len(args):
-                setattr(self, attr, args[i])
+        if args:
+            attributes = ["id", "width", "height", "x", "y"]
+            for i, attr in enumerate(attributes):
+                if i < len(args):
+                    setattr(self, attr, args[i])
+        elif len(kwargs) < 0:
+            for key, value in kwargs.items():
+                if key == "id":
+                    self.id = value
+                elif key == "width":
+                    self.width == value
+                elif key == "height":
+                    self.height = value
+                elif key == "x":
+                    self.x = value
+                elif key == "y":
+                    self.x = value
+                else:
+                    break
+
+if __name__ == "__main__":
+
+    r1 = Rectangle(10, 10, 10, 10)
+    print(r1)
+
+    r1.update(height=1)
+    print(r1)
+
+    r1.update(width=1, x=2)
+    print(r1)
+
+    r1.update(y=1, width=2, x=3, id=89)
+    print(r1)
+
+    r1.update(x=1, height=2, y=3, width=4)
+    print(r1)
