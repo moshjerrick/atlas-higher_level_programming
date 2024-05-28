@@ -63,7 +63,7 @@ class Square(Rectangle):
                     self.y = arg
                 else:
                     break
-        elif len(kwargs) > 0:
+        elif kwargs:
             for j, value in kwargs.items():
                 if j == "id":
                     self.id = value
