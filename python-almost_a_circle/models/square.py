@@ -50,12 +50,24 @@ class Square(Rectangle):
         Updating Square with attributes
         """
         if args:
-            attributes = ["id", "size" "x", "y"]
-            for i, attr in enumerate(attributes):
-                if i < len(args):
-                    setattr(self, attr, args[i])
-        elif kwargs:
-            for key, value in kwargs.items():
-                if key in ["id", "size", "x", "y"]:
-                    setattr(self, key, value)
-
+            for i, arg in enumerate(args):
+                if i == 0:
+                    self.id == arg
+                if i == 1:
+                    self.size == arg
+                if i == 2:
+                    self.x == arg
+                if i == 3:
+                    self.y == arg
+                else:
+                    break
+        elif len(kwargs) > 0:
+            for j, value in kwargs.item():
+                if j == "id":
+                    self.id = value
+                elif j == "size":
+                    self.size = value
+                elif j == "x":
+                    self.x = value
+                elif j == "y":
+                    self.y = value
