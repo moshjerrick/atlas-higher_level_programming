@@ -12,7 +12,6 @@ class Square(Rectangle):
     Represents a square with a size, x and y positions, and an optional id.
     """
 
-
     def __init__(self, size, x=0, y=0, id=None):
         """
         Initialize a new Square instance.
@@ -33,6 +32,6 @@ class Square(Rectangle):
             str: The string representation of the square.
         """
         return "[Square] ({}) {}/{} - {}".format(self.id,
-                                                self.x,
-                                                self.y,
-                                                self.width)
+                                                 self.x,
+                                                 self.y,
+                                                 self.width)
