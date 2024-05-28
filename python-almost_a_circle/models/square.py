@@ -33,7 +33,6 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
-
     def __str__(self):
         """
         Return the string representation of the Square instance.
@@ -45,4 +44,3 @@ class Square(Rectangle):
                                                  self.x,
                                                  self.y,
                                                  self.width)
-
