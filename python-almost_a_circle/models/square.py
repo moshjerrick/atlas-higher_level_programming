@@ -72,3 +72,5 @@ class Square(Rectangle):
                     self.x = value
                 elif j == "y":
                     self.y = value
+                else:
+                    break
