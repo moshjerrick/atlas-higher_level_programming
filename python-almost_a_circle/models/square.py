@@ -24,14 +24,14 @@ class Square(Rectangle):
         """
         super().__init__(size, size, x, y, id)
 
-        @property
-        def size(self):
-            return self.width
+    @property
+    def size(self):
+        return self.width
 
-        @size.setter
-        def size(self, value):
-            size.width = value
-            size.height = value
+    @size.setter
+    def size(self, value):
+        size.width = value
+        size.height = value
 
 
     def __str__(self):
