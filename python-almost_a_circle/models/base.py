@@ -3,8 +3,6 @@
 Getting that Base
 """
 import json
-from os import path
-import csv
 
 
 class Base:
@@ -30,5 +28,5 @@ class Base:
         """
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
-            temp_json = json.dumps(list_dictionaries)
-            return temp_json
+        return json.dumps(list_dictionaries)
+
