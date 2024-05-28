@@ -63,41 +63,14 @@ class Square(Rectangle):
                     break
         elif len(kwargs) > 0:
             for j, value in kwargs.items():
-                if j = "id":
+                if j == "id":
                     self.id = value
-                elif j = "size":
+                elif j == "size":
                     self.width = value
                     self.height = value
-                elif j = "x":
+                elif j == "x":
                     self.x = value
-                elif j = "y":
+                elif j == "y":
                     self.y = value
                 else:
                     break
-
-
-if __name__ == "__main__":
-
-    s1 = Square(5)
-    print(s1)
-
-    s1.update(10)
-    print(s1)
-
-    s1.update(1, 2)
-    print(s1)
-
-    s1.update(1, 2, 3)
-    print(s1)
-
-    s1.update(1, 2, 3, 4)
-    print(s1)
-
-    s1.update(x=12)
-    print(s1)
-
-    s1.update(size=7, y=1)
-    print(s1)
-
-    s1.update(size=7, id=89, y=1)
-    print(s1)
