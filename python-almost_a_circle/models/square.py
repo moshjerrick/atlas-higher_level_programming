@@ -5,11 +5,13 @@ Module for the Square class, which inherits from the Rectangle class.
 
 from .rectangle import Rectangle
 
+
 class Square(Rectangle):
     """
     Square class inheriting from Rectangle.
     Represents a square with a size, x and y positions, and an optional id.
     """
+
 
     def __init__(self, size, x=0, y=0, id=None):
         """
@@ -30,4 +32,7 @@ class Square(Rectangle):
         Returns:
             str: The string representation of the square.
         """
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
+        return "[Square] ({}) {}/{} - {}".format(self.id,
+                                                self.x,
+                                                self.y,
+                                                self.width)
