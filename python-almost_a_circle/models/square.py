@@ -3,7 +3,7 @@
 Module for the Square class, which inherits from the Rectangle class.
 """
 
-from .rectangle import Rectangle
+from model.rectangle import Rectangle
 
 class Square(Rectangle):
     """
