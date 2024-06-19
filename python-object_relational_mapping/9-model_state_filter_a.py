@@ -23,6 +23,6 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)  # Creates a 'Session' class
     session = Session()  # Creates a 'Session' instance
     state = session.query(State).filter(State.name.like('%a%')).order_by(State.id).all()
-    for state in states:
+    for states in state:
         print("{}: {}".format(state.id, state.name))
     
