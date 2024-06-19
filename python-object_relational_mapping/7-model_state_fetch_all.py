@@ -13,7 +13,7 @@ if __name__ == "__main__":
     Acces to the database
     """
     engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}"  
-                #Creates engine instance to manage
+                # Creates engine instance to manage
                 #connections to the database
                         .format(sys.argv[1], sys.argv[2], sys.argv[3]),
                 #Use command line args to form database connections string
