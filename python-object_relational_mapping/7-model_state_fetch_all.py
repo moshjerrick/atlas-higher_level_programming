@@ -14,14 +14,14 @@ if __name__ == "__main__":
     """
     engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}"  
                 # Creates engine instance to manage
-                #connections to the database
+                # connections to the database
                         .format(sys.argv[1], sys.argv[2], sys.argv[3]),
-                #Use command line args to form database connections string
-                        pool_pre_ping=True)  #tests connection for liveness
+                # Use command line args to form database connections string
+                        pool_pre_ping=True)  # tests connection for liveness
     Base.metadata.create_all(engine)  
-    #Creates all tables defined in the 'Base' metadata, like 'State'
-    Session = sessionmaker(bind=engine)  #Creates a 'Session' class
-    session = Session()  #Creates a 'Session' instance
+    # Creates all tables defined in the 'Base' metadata, like 'State'
+    Session = sessionmaker(bind=engine)  # Creates a 'Session' class
+    session = Session()  # Creates a 'Session' instance
     for state in session.query(State).order_by(State.id).all():
         print("{}: {}".format(state.id, state.name))
     session.close()
