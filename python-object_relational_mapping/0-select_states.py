@@ -13,6 +13,3 @@ if __name__ == "__main__":
     states = cursor.fetchall() # fetch all the records and store in states variable
     for state in states: # iterates (state) in the states list
         print(state) # prints each state which represents a row from the states table
-    cursor.close()
-    db.close()
-    
