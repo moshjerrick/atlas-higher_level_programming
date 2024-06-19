@@ -14,5 +14,6 @@ if __name__ == "__main__":
     cursor.execute("SELECT * FROM states WHERE name LIKE BINARY \
         '{}' ORDER BY id".format(sys.argv[4]))
     state = cursor.fetchall()
-    for states in state:
-        print(states)
+    if state is not None:
+        for states in state:
+            print(states)
