@@ -22,8 +22,8 @@ if __name__ == "__main__":
     # Creates all tables defined in the 'Base' metadata, like 'State'
     Session = sessionmaker(bind=engine)  # Creates a 'Session' class
     session = Session()  # Creates a 'Session' instance
-state = session.query(State).order_by(State.id).first()
-if state is not None:
-    print("{}: {}".format(state.id, state.name))
-else:
-    print("Nothing")
+    state = session.query(State).order_by(State.id).first()
+    if state is not None:
+        print("{}: {}".format(state.id, state.name))
+    else:
+        print("Nothing")
