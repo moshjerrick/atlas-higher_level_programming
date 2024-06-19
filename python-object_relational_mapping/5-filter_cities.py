@@ -13,5 +13,5 @@ if __name__ == "__main__":
         FROM cities JOIN states ON cities.state_id = states.id ORDER\
             BY cities.id")
     states = cursor.fetchall()
-    for state in states:
+    if states is not None:
         print(", ".join([state[1] for state in states]))
