@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
- lists all states with a name starting with N 
+ lists all states with a name starting with N
  (upper N) from the database hbtn_0e_0_usa
 """
 
@@ -18,4 +18,3 @@ if __name__ == "__main__":
     for state in states:  # iterates (state) in the states list
         print(state)
         # prints each state which represents a row from the states table
-        
