@@ -22,7 +22,7 @@ if __name__ == "__main__":
     # Creates all tables defined in the 'Base' metadata, like 'State'
     Session = sessionmaker(bind=engine)  # Creates a 'Session' class
     session = Session()  # Creates a 'Session' instance
-    state = session.query(State).filter(State.name.like('%a%')).order_by(State.id).all()
+    states = session.query(State).filter(State.name.like('%a%')).order_by(State.id).all()
     for state in states:
         print("{}: {}".format(state.id, state.name))
     
