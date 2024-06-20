@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-
-
+Change the name of a State object from the database hbtn_0e_6_usa
 """
 from sys import argv
 from model_state import Base, State
@@ -10,6 +9,7 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
     """
+    access to the database and update the State object with id 2
     """
     # Create a new Engine instance
     engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}"
