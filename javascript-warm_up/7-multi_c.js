@@ -3,6 +3,6 @@
 const [,, x] = process.argv;
 const num = parseInt(x);
 const langs = ['C is fun'];
-if (isNaN(x) {
+if (isNaN(x)) {
   console.log('Missing number of occurrences');
 }
