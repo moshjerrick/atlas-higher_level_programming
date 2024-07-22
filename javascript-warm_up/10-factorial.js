@@ -11,3 +11,4 @@ function factorial (n) {
   }
   const number = Number(process.argv[2]);
   console.log(factorial(number));
+  
