@@ -2,7 +2,7 @@
 // class Square that defines a square and inherits from Square
 const Square = require('./5-square');
 
-module.exprot = class Square extends parentSquare {
+module.export = class Square extends parentSquare {
   charPrint (c) {
     if (c === undefined) {
       c = 'X';
