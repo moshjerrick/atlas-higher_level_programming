@@ -5,4 +5,20 @@ const characterID = '18';
 const URL = 'https://swapi-api.hbtn.io/api/films/';
 
 request.get(URL, (err, response, body) => {
-    
+    if (err) {
+        console.log(err);
+    }
+    else {
+        const movies = JSON.parse(body).results;
+        let count = 0;
+        for (const movie of movies) {
+            for (const character of movie.characters) {
+                if (character.includes(characterID)) {
+                    count++;
+                    break;
+                }
+            }
+        }
+        console.log(count);
+    }
+});
